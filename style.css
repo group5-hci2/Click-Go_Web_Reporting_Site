@@ -1684,3 +1684,117 @@ video {
         min-height: 500px; /* keep your desktop design */
     }
 }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    width: 100%;
+    max-width: 550px;
+    padding: 35px;
+    border-radius: 14px;
+    position: relative;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: pop 0.25s ease;
+}
+
+@keyframes pop {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal .close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 10000;
+    color: #333;
+}
+
+/* NAME */
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* ROLE */
+.modal-header .role {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #FAA300;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* BODY */
+.modal-body {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.modal-body h4 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.modal-body ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.modal-body li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* LOCK SCROLL */
+body.modal-open {
+    overflow: hidden;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-card p {
+    all: unset;
+    display: block;
+    text-align: center;
+    margin: 4px 0;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.role {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.member.leader .role {
+    color: #FAA300;
+    font-weight: 600;
+}
