@@ -1543,39 +1543,39 @@ video {
 
 @media (max-width: 768px) {
 
+    /* prevent weird overflow */
     html, body {
         overflow-x: hidden !important;
-        width: 100%;
     }
 
-    * {
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* TEAM FIX */
+    /* STACK ALL CARDS CLEANLY */
     .team-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
+    /* IMPORTANT: reset bottom row completely */
     .team-bottom {
+        display: flex !important;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
-    }
-
-    .member-card {
+        justify-content: center;
+        gap: 20px;
         width: 100%;
-        max-width: 320px;
-        flex: none;
+        grid-column: auto;
     }
 
     .member {
         width: 100%;
+        display: flex;
         justify-content: center;
     }
-}
 
+    .member-card {
+        width: 100%;
+        max-width: 340px;  /* consistent size for ALL cards */
+    }
+}
 @media (max-width: 768px) {
 
     /* HERO TEXT FIX */
