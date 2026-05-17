@@ -1580,13 +1580,13 @@ video {
 
     /* HERO TEXT FIX */
     .hero-text h2 {
-        font-size: 1.03em;   /* smaller title */
+        font-size: 1.04em;   /* smaller title */
         line-height: 1.0;
         text-align: right;
     }
 
     .hero-text p {
-        font-size: 0.80rem;     /* readable but not too big */
+        font-size: 0.70rem;     /* readable but not too big */
         text-align: right;
         padding: 0 5px;
     }
@@ -1599,7 +1599,7 @@ video {
 
     .hero-text {
         text-align: right;
-        max-width: 75%;
+        max-width: 65%;
     }
 }
 
@@ -1662,8 +1662,25 @@ video {
     .hero {
         min-height: auto !important;
         height: auto !important;
-        padding: 90px 20px 40px;
+        padding: 120px 20px 40px;
         background-size: cover;
         background-position: center;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .hero-content {
+        justify-content: flex-end;
+        padding: 0 8%;
+        text-align: right;
+    }
+
+    .hero-text {
+        text-align: right;
+    }
+
+    .hero {
+        min-height: 500px; /* keep your desktop design */
     }
 }
