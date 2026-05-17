@@ -62,50 +62,70 @@
 
     <div class="team-grid">
 
-        <div class="member">
-            <div class="member-card">
-                <img src="images/analyn.png" class="member-photo" alt="Member 3">
-                <p><strong>Maria Analyn Cantor</strong></p>
-                <p>Member</p>
-            </div>
+       <div class="member">
+    <div class="member-card" onclick="openModal('analyn')">
+        <img src="images/analyn.png" class="member-photo" alt="Member 3">
+        <p><strong>Maria Analyn Cantor</strong></p>
+        <p class="role">Member</p>
+    </div>
+</div>
+
+<div class="member leader">
+    <div class="member-card" onclick="openModal('joan')">
+        <img src="images/jo.png" class="member-photo" alt="Leader">
+        <p><strong>JOAN MAE PALAYPAYON</strong></p>
+        <p class="role">Group Leader</p>
+    </div>
+</div>
+
+<div class="member">
+    <div class="member-card" onclick="openModal('blesszy')">
+        <img src="images/blessz.png" class="member-photo" alt="Member 2">
+        <p><strong>Blesszy Joy Nabus</strong></p>
+        <p class="role">Member</p>
+    </div>
+</div>
+
+<div class="team-bottom">
+
+    <div class="member">
+        <div class="member-card" onclick="openModal('greg')">
+            <img src="images/greg.png" class="member-photo" alt="Member 5">
+            <p><strong>Jose Greg Picaso</strong></p>
+            <p class="role">Member</p>
+        </div>
+    </div>
+
+    <div class="member">
+        <div class="member-card" onclick="openModal('harold')">
+            <img src="images/harold.png" class="member-photo" alt="Member 4">
+            <p><strong>Harold Hector Vale</strong></p>
+            <p class="role">Member</p>
+        </div>
+    </div>
+
+</div>
+    </div>
+
+    <div id="modal" class="modal">
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <div class="modal-header">
+            <h2 id="modal-name"></h2>
+
+            <!-- role only shown if exists -->
+            <p id="modal-role" class="role"></p>
         </div>
 
-          <div class="member leader">
-            <div class="member-card">
-                <img src="images/jo.png" class="member-photo" alt="Leader">
-                <p><strong>Joan Mae Palaypayon</strong></p>
-                <p>Group Leader</p>
-            </div>
-        </div>
-
-
-        <div class="member">
-            <div class="member-card">
-                <img src="images/blessz.png" class="member-photo" alt="Member 2">
-                <p><strong>Blesszy Joy Nabus</strong></p>
-                <p>Member</p>
-            </div>
-        </div>
-
-            <div class="team-bottom">
-        <div class="member">
-            <div class="member-card">
-                <img src="images/greg.png" class="member-photo" alt="Member 5">
-                <p><strong>Jose Greg Picaso</strong></p>
-                <p>Member</p>
-            </div>
-        </div>
-
-        <div class="member">
-            <div class="member-card">
-                <img src="images/harold.png" class="member-photo" alt="Member 4">
-                <p><strong>Harold Hector Vale</strong></p>
-                <p>Member</p>
-            </div>
-        </div>
+        <div class="modal-body">
+            <h4>Contributions:</h4>
+            <ul id="modal-text"></ul>
         </div>
 
     </div>
+</div>
 
 </section>
 
