@@ -124,7 +124,7 @@ function openModal(person) {
             name: "Joan Mae Palaypayon",
             role: "Group Leader",
             contributions: [
-                "Created Google forms (SUS questionnaire distribution)",
+            "Created Google forms (SUS questionnaire distribution)",
             "Managed distribution of usability testing surveys",
               "Developed Results, Discussion, and Recommendation Page",
             "Organized Summary of Usability Testing Results section",
@@ -157,10 +157,10 @@ function openModal(person) {
                "Assisted in distribution of usability surveys",
                "Helped in collecting responses from respondents",
             "Developed Data Gathering Page",
-            "Created Consent Form for respondents",
+            "Created Consent Form section",
             "Created Usability Testing Survey Instruments (SUS-based) section",
             "Collected and created Respondent Information section",
-            "Assisted during usability testing sessions"
+            "Assisted in organizing collected responses"
             ]
         },
         harold: {
@@ -170,7 +170,7 @@ function openModal(person) {
                  "Recorded GMeet sessions (video and screenshots)",
                  "Assisted in distribution of usability surveys",
                  "Helped in collecting responses from respondents",
-                 "Assisted in analyzing user feedback",
+                 "Analyzied user feedback",
             "Created Recommendations for Improving the Prototype section",
             "Created Suggested Design Improvements section",
             "Developed Additional Findings Page",
